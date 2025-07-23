@@ -9,6 +9,24 @@ namespace CsSession6
 
         static void Main(string[] args)
         {
+            #region q3
+
+            //3 - Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
+            //int operation(int a, int b,bool sm, bool sub)
+            //{
+            //    if (sm)
+            //    {
+            //        return a + b ;
+            //    }
+            //    if(sub) 
+            //    {
+            //        return a - b;
+            //    }
+            //    return -1;
+    
+            //}
+
+            #endregion
 
             #region Q4
 
@@ -118,7 +136,31 @@ namespace CsSession6
 
             #region Q8
 
+            //string ChangeChar(string s, int i, char c)
+            //{
+            //    if (i < 0 || i >= s.Length)
+            //    {
+            //        return "Index out of range";
+            //    }
 
+            //    // Convertt the string to array
+            //    char[] arr = s.ToCharArray();
+            //    arr[i] = c;
+
+            //    return new string(arr);
+            //}
+
+            //Console.Write("Enter a string: ");
+            //string s = Console.ReadLine();
+
+            //Console.Write("Enter index to change (0-based): ");
+            //int i; int.TryParse(Console.ReadLine(), out i);
+
+            //Console.Write("Enter new character: ");
+            //char c; char.TryParse(Console.ReadLine(), out c);
+
+            //string ss = ChangeChar(s, i, c);
+            //Console.WriteLine("Modified string: " + ss);
 
             #endregion
         }
