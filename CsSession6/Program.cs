@@ -108,7 +108,7 @@ namespace CsSession6
             //        return a - b;
             //    }
             //    return -1;
-    
+
             //}
 
             #endregion
@@ -127,7 +127,7 @@ namespace CsSession6
             //        return a - b;
             //    }
             //    return -1;
-    
+
             //}
 
             #endregion
@@ -240,31 +240,34 @@ namespace CsSession6
 
             #region Q8
 
-            //string ChangeChar(string s, int i, char c)
-            //{
-            //    if (i < 0 || i >= s.Length)
-            //    {
-            //        return "Index out of range";
-            //    }
+            /*Create a function named "ChangeChar" to modify a letter in a certain position(0 based)
+            of a string, replacing it with a different letter*/
 
-            //    // Convertt the string to array
-            //    char[] arr = s.ToCharArray();
-            //    arr[i] = c;
+            /*string ChangeChar(string s, int i, char c)
+            {
+                if (i < 0 || i >= s.Length)
+                {
+                    return "Index out of range";
+                }
 
-            //    return new string(arr);
-            //}
+                //Convertt the string to array
+                char[] arr = s.ToCharArray();
+                arr[i] = c;
 
-            //Console.Write("Enter a string: ");
-            //string s = Console.ReadLine();
+                return new string(arr);
+            }
 
-            //Console.Write("Enter index to change (0-based): ");
-            //int i; int.TryParse(Console.ReadLine(), out i);
+            Console.Write("Enter a string: ");
+            string s = Console.ReadLine();
 
-            //Console.Write("Enter new character: ");
-            //char c; char.TryParse(Console.ReadLine(), out c);
+            Console.Write("Enter index to change (0-based): ");
+            int i; int.TryParse(Console.ReadLine(), out i);
 
-            //string ss = ChangeChar(s, i, c);
-            //Console.WriteLine("Modified string: " + ss);
+            Console.Write("Enter new character: ");
+            char c; char.TryParse(Console.ReadLine(), out c);
+
+            string ss = ChangeChar(s, i, c);
+            Console.WriteLine("Modified string: " + ss);*/
 
             #endregion
         }
