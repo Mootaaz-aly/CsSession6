@@ -94,6 +94,25 @@ namespace CsSession6
 
             #endregion
 
+            #region q3
+
+            //3 - Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
+            //int operation(int a, int b,bool sm, bool sub)
+            //{
+            //    if (sm)
+            //    {
+            //        return a + b ;
+            //    }
+            //    if(sub) 
+            //    {
+            //        return a - b;
+            //    }
+            //    return -1;
+    
+            //}
+
+            #endregion
+
             #region Q4
 
             /*Write a program in C# Sharp to create a function to calculate
@@ -202,34 +221,31 @@ namespace CsSession6
 
             #region Q8
 
-            /*Create a function named "ChangeChar" to modify a letter
-            in a certain position(0 based) of a string, replacing it with a different letter*/
+            //string ChangeChar(string s, int i, char c)
+            //{
+            //    if (i < 0 || i >= s.Length)
+            //    {
+            //        return "Index out of range";
+            //    }
 
-            /*string ChangeChar(string s, int i, char c)
-            {
-                if (i < 0 || i >= s.Length)
-                {
-                    return "Index out of range";
-                }
+            //    // Convertt the string to array
+            //    char[] arr = s.ToCharArray();
+            //    arr[i] = c;
 
-                // Convertt the string to array
-                char[] arr = s.ToCharArray();
-                arr[i] = c;
+            //    return new string(arr);
+            //}
 
-                return new string(arr);
-            }
+            //Console.Write("Enter a string: ");
+            //string s = Console.ReadLine();
 
-            Console.Write("Enter a string: ");
-            string s = Console.ReadLine();
+            //Console.Write("Enter index to change (0-based): ");
+            //int i; int.TryParse(Console.ReadLine(), out i);
 
-            Console.Write("Enter index to change (0-based): ");
-            int i; int.TryParse(Console.ReadLine(), out i);
+            //Console.Write("Enter new character: ");
+            //char c; char.TryParse(Console.ReadLine(), out c);
 
-            Console.Write("Enter new character: ");
-            char c; char.TryParse(Console.ReadLine(), out c);
-
-            string ss = ChangeChar(s, i, c);
-            Console.WriteLine("Modified string: " + ss);*/
+            //string ss = ChangeChar(s, i, c);
+            //Console.WriteLine("Modified string: " + ss);
 
             #endregion
         }
