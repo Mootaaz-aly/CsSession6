@@ -1,6 +1,9 @@
-﻿using System.Buffers.Text;
+﻿using System;
+using System.Buffers.Text;
 using System.ComponentModel;
 using System.IO.Pipelines;
+using System.Reflection.Metadata.Ecma335;
+using System.Threading.Channels;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CsSession6
@@ -8,8 +11,88 @@ namespace CsSession6
     internal class Program
     {
 
+        class Person
+        {
+            public string name = "m";
+        }
+
         static void Main(string[] args)
         {
+            #region Q1&Q2
+
+            /*Explain the difference between passing(Reference type parameters)
+            by value and by reference then write a suitable c# example.*/
+
+            /*void val(Person p) //Pass by value
+            {
+                p.name = "Mootaaz";  // This will affect original variable
+                p = new Person();    // New object assigned but not affect
+                p.name = "New Person";
+            }
+            
+            static void reff(ref Person p) //Pass by refrence
+            {
+                p.name = "Moot";  // This will affect original variable
+                p = new Person(); // This will affect original variable too
+                p.name = "New";
+            }*/
+            #endregion
+
+            #region Q3
+
+            /*3 - Write a c# Function that accept 4 parameters from user and return result
+            of summation and subtracting of two numbers*/
+
+            /*int operation(int a, int b,bool sm, bool sub)
+            {
+                if (sm && !sub)
+                {
+                    return a + b ;
+                }
+                else if(sub && !sm) 
+                {
+                    return a - b;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+
+            int n, nn;
+            bool summ = false; bool subb = false;
+            Console.Write("Enter the first Number: ");
+            int.TryParse(Console.ReadLine(), out n);
+
+            Console.Write("Enter the Second Number: ");
+            int.TryParse(Console.ReadLine(), out nn);
+
+            Console.WriteLine("Do you want to sum? [Y/N]");
+            char c; char.TryParse(Console.ReadLine(), out c);
+
+            if (c == 'y' || c == 'Y')
+            {
+                summ = true;
+            }
+            else
+            {
+                Console.WriteLine("Do you want to subtract? [Y/N]");
+                char cc; char.TryParse(Console.ReadLine(), out cc);
+
+                if (cc == 'y' || cc == 'Y')
+                    subb = true;
+            }
+
+            int res = operation(n, nn, summ, subb);
+
+            if(res == -1)
+                Console.WriteLine("Invalid Inputs");
+            else
+                Console.WriteLine($"The resault of Operation is : {res}");*/
+            // Trying to handle all cases (:
+
+
+            #endregion
 
             #region Q4
 
@@ -122,7 +205,31 @@ namespace CsSession6
             /*Create a function named "ChangeChar" to modify a letter
             in a certain position(0 based) of a string, replacing it with a different letter*/
 
-            
+            /*string ChangeChar(string s, int i, char c)
+            {
+                if (i < 0 || i >= s.Length)
+                {
+                    return "Index out of range";
+                }
+
+                // Convertt the string to array
+                char[] arr = s.ToCharArray();
+                arr[i] = c;
+
+                return new string(arr);
+            }
+
+            Console.Write("Enter a string: ");
+            string s = Console.ReadLine();
+
+            Console.Write("Enter index to change (0-based): ");
+            int i; int.TryParse(Console.ReadLine(), out i);
+
+            Console.Write("Enter new character: ");
+            char c; char.TryParse(Console.ReadLine(), out c);
+
+            string ss = ChangeChar(s, i, c);
+            Console.WriteLine("Modified string: " + ss);*/
 
             #endregion
         }
