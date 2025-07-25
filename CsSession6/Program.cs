@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Buffers.Text;
+using System.ComponentModel;
 using System.IO.Pipelines;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -118,7 +119,10 @@ namespace CsSession6
 
             #region Q8
 
+            /*Create a function named "ChangeChar" to modify a letter
+            in a certain position(0 based) of a string, replacing it with a different letter*/
 
+            
 
             #endregion
         }
