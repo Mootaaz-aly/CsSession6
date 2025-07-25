@@ -113,6 +113,25 @@ namespace CsSession6
 
             #endregion
 
+            #region q3
+
+            //3 - Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
+            //int operation(int a, int b,bool sm, bool sub)
+            //{
+            //    if (sm)
+            //    {
+            //        return a + b ;
+            //    }
+            //    if(sub) 
+            //    {
+            //        return a - b;
+            //    }
+            //    return -1;
+    
+            //}
+
+            #endregion
+
             #region Q4
 
             /*Write a program in C# Sharp to create a function to calculate
